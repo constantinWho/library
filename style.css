@@ -1,0 +1,193 @@
+body {
+    background: #3f3f3f;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0; 
+}
+h1 {
+    font-family: 'Amatic SC', cursive;
+    cursor:default;
+    align-self: center;
+    background: #707070;
+    display: inline-block;
+    font-size: 5em;
+    text-align: center;
+    margin: 0;
+    color: #ffdf6c;
+    border-radius: 50%;
+    transition: all 1000ms ease-in-out;
+}
+h1:hover {
+    background: #4D774E;
+    transform: scale(1.1);
+}
+header {
+    position: sticky;
+    display: flex;
+    justify-content: space-around;
+    height: 10em;
+    background: #202020;
+    border-bottom: 1px solid #ffdf6c;
+}
+#container {
+    margin-left:auto;
+    margin-right:auto;
+    width: 85%;
+    margin-top: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 20em;
+    }
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin: 2em;
+    width: 17em;
+    height: 23em;
+    background:  #959595;
+    border: 0.3em solid #202020;
+    align-self: center;
+    transition: all 1000ms ease-in-out;
+}
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 2em #202020;
+}
+
+p {
+    font-family: 'VT323', monospace;
+    cursor: default;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 5px;
+}
+.title {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #212121;
+    font-family: 'Rubik', sans-serif;
+}
+.author {
+    color: #2a2a2a;
+    font-family: 'Rubik', sans-serif;
+}
+.num-of-pages {
+    color: #404040;
+    font-family: 'Rubik', sans-serif;
+}
+#new-book {
+    font-family: 'VT323', monospace;
+    margin-right: 2em;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.3em;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 1em;
+    color: #ffdf6c;
+    border: 1px solid #ffdf6c;
+    background-color: #202020;
+    outline: none;
+    transition: all 1000ms ease-in-out;
+}
+
+#new-book:hover {
+    background: #164A41;
+    transform: scale(1.1);
+}
+
+
+#add-new-book {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 0;
+    height: 25em;
+    width: 20em;
+    border: 0.3em solid #164A41;
+    display: none;
+
+}
+label {
+    width: 30%;
+    font-size: 2em;
+    font-family: 'VT323', monospace;
+}
+input {
+    font-size: 1.5em;
+    font-family: 'VT323', monospace;
+    width: 50%;
+    outline: none;
+}
+#if-read {
+    height: 1em;
+    width: 1em;
+    margin-right: 5.9em;
+}
+
+#close-Btn {
+    cursor: pointer;
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    margin: 0;
+    padding: 0;
+    background:#B73225;
+    height: 0.9em;
+    width: 0.9em;
+    border: 0.1em solid #164A41;
+    border-radius: 3px;
+}
+
+.cardBtn:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
+.submit-Btn {
+    width: 60%;
+    height: 3em;
+    cursor: pointer;
+    font-family: 'VT323', monospace;
+    cursor: pointer;
+    outline: none;
+    border: 0.2em solid #202020;
+    background-color: #4D774E;
+    transition: all 500ms ease-in-out;
+    opacity: 0.7;
+}
+
+.submit-Btn:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+.cardBtn {
+    font-family: 'VT323', monospace;
+    cursor: pointer;
+    align-self: center;
+    width: 10em;
+    outline: none;
+    border: 0.2em solid #202020;
+}
+.readBtn {
+    margin-left:auto;
+    margin-right:auto;
+    background-color: #4D774E;
+    transition: all 500ms ease-in-out;
+}
+
+.removeBtn {
+    margin-left:auto;
+    margin-right:auto;
+    background-color: #B73225;
+    transition: all 500ms ease-in-out;
+}

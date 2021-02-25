@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Books</title>
+</head>
+<body>
+    <header>
+        <h1>Library</h1>
+        <button id="new-book" type="button">NEW BOOK</button>
+    </header>
+    <main id="container">
+
+        <form id="add-new-book" class="card">
+            <p id="close-Btn">X</p>
+            <label for="book-name">Book:</label>
+            <input required type="text" name="book-name" id="book-name" placeholder="Little Prince"><br>
+            <label for="author-name">Author:</label>
+            <input required type="text" name="author-name" id="author-name" placeholder="Antoine de Saint-Exupéry"><br>
+            <label for="page-num">Pages:</label>
+            <input min="1" required type="number" name="page-num" id="page-num" placeholder="64"><br>
+            <label for="if-read">Read:</label>
+            <input type="checkbox" name="if-read" id="if-read"><br>
+            <input class="submit-Btn" type="submit" value="Submit">
+        </form>
+
+        <div class="card">
+            <p class="title">Harry Potter</p>
+            <p class="author">jk rowling</p>
+            <p class="num-of-pages">869</p>
+            <button class="cardBtn readBtn" type="button">READ</button>
+            <button class="cardBtn removeBtn" type="button">REMOVE</button>
+        </div>
+    </main>
+<script src="script.js"></script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=VT323&family=Work+Sans&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+</style>
+</body>
+</html>
