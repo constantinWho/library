@@ -9,31 +9,32 @@
 </head>
 <body>
     <header>
-        <h1>Library</h1>
+        <h1 id="library-logo">Library</h1>
         <button id="new-book" type="button">NEW BOOK</button>
     </header>
     <main id="container">
 
-        <form id="add-new-book" class="card">
-            <p id="close-Btn">X</p>
-            <label for="book-name">Book:</label>
-            <input required type="text" name="book-name" id="book-name" placeholder="Little Prince"><br>
-            <label for="author-name">Author:</label>
-            <input required type="text" name="author-name" id="author-name" placeholder="Antoine de Saint-Exupéry"><br>
-            <label for="page-num">Pages:</label>
-            <input min="1" required type="number" name="page-num" id="page-num" placeholder="64"><br>
-            <label for="if-read">Read:</label>
-            <input type="checkbox" name="if-read" id="if-read"><br>
-            <input class="submit-Btn" type="submit" value="Submit">
+        <form class="new-book-form card">
+            <p class="close-btn">X</p>
+            <label for="name-input">Book:</label>
+            <input required type="text" name="name-input" class="name-input" placeholder="Little Prince"><br>
+            <label for="author-input">Author:</label>
+            <input required type="text" name="author-input" class="author-input" placeholder="Antoine de Saint-Exupéry"><br>
+            <label for="pages-input">Pages:</label>
+            <input min="1" required type="number" name="pages-input" class="pages-input" placeholder="64"><br>
+            <label for="read-btn">Read:</label>
+            <input type="checkbox" name="read-btn" class="read-btn"><br>
+            <input class="submit-btn" type="submit" value="Submit">
         </form>
 
         <div class="card">
-            <p class="title">Harry Potter</p>
-            <p class="author">jk rowling</p>
-            <p class="num-of-pages">869</p>
-            <button class="cardBtn readBtn" type="button">READ</button>
-            <button class="cardBtn removeBtn" type="button">REMOVE</button>
+            <p class="name">Harry Potter and the Order of Phoenix</p>
+            <p class="author">J.K. Rowling</p>
+            <p class="pages">851</p>
+            <button class="card-btn read-status">READ</button>
+            <button class="card-btn remove-btn">REMOVE</button>
         </div>
+
     </main>
 <script src="script.js"></script>
 <style>

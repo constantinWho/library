@@ -5,7 +5,23 @@ body {
     margin: 0;
     padding: 0; 
 }
-h1 {
+p {
+    font-family: 'VT323', monospace !important;
+    cursor: default;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 5px;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-around;
+    height: 10em;
+    background: #202020;
+    border-bottom: 1px solid #ffdf6c;
+}
+#library-logo {
     font-family: 'Amatic SC', cursive;
     cursor:default;
     align-self: center;
@@ -16,68 +32,11 @@ h1 {
     margin: 0;
     color: #ffdf6c;
     border-radius: 50%;
-    transition: all 1000ms ease-in-out;
+    transition: all 100ms ease-in-out;
 }
-h1:hover {
+#library-logo:hover {
     background: #4D774E;
     transform: scale(1.1);
-}
-header {
-    position: sticky;
-    display: flex;
-    justify-content: space-around;
-    height: 10em;
-    background: #202020;
-    border-bottom: 1px solid #ffdf6c;
-}
-#container {
-    margin-left:auto;
-    margin-right:auto;
-    width: 85%;
-    margin-top: 3em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    height: 20em;
-    }
-.card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-content: space-evenly;
-    margin: 2em;
-    width: 17em;
-    height: 23em;
-    background:  #959595;
-    border: 0.3em solid #202020;
-    align-self: center;
-    transition: all 1000ms ease-in-out;
-}
-.card:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 2em #202020;
-}
-
-p {
-    font-family: 'VT323', monospace;
-    cursor: default;
-    text-align: center;
-    font-size: 1.5em;
-    margin: 5px;
-}
-.title {
-    font-size: 1.8em;
-    font-weight: bold;
-    color: #212121;
-    font-family: 'Rubik', sans-serif;
-}
-.author {
-    color: #2a2a2a;
-    font-family: 'Rubik', sans-serif;
-}
-.num-of-pages {
-    color: #404040;
-    font-family: 'Rubik', sans-serif;
 }
 #new-book {
     font-family: 'VT323', monospace;
@@ -93,16 +52,46 @@ p {
     border: 1px solid #ffdf6c;
     background-color: #202020;
     outline: none;
-    transition: all 1000ms ease-in-out;
+    transition: all 100ms ease-in-out;
 }
-
 #new-book:hover {
     background: #164A41;
     transform: scale(1.1);
 }
 
+/* MAIN */
+#container {
+    margin-left:auto;
+    margin-right:auto;
+    width: 85%;
+    margin-top: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 20em;
+}
 
-#add-new-book {
+/* BOOK CARD */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin: 2em;
+    width: 17em;
+    height: 23em;
+    background:  #959595;
+    border: 0.3em solid #202020;
+    align-self: center;
+    transition: all 100ms ease-in-out;
+}
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 2em #202020;
+}
+
+/* NEW BOOK FORM */
+.new-book-form {
     position: absolute;
     display: flex;
     flex-wrap: wrap;
@@ -115,26 +104,8 @@ p {
     width: 20em;
     border: 0.3em solid #164A41;
     display: none;
-
 }
-label {
-    width: 30%;
-    font-size: 2em;
-    font-family: 'VT323', monospace;
-}
-input {
-    font-size: 1.5em;
-    font-family: 'VT323', monospace;
-    width: 50%;
-    outline: none;
-}
-#if-read {
-    height: 1em;
-    width: 1em;
-    margin-right: 5.9em;
-}
-
-#close-Btn {
+.close-btn {
     cursor: pointer;
     position: absolute;
     right: -5px;
@@ -147,13 +118,23 @@ input {
     border: 0.1em solid #164A41;
     border-radius: 3px;
 }
-
-.cardBtn:hover {
-    opacity: 0.8;
-    transform: scale(1.1);
+label {
+    width: 30%;
+    font-size: 2em;
+    font-family: 'VT323', monospace;
 }
-
-.submit-Btn {
+input {
+    font-size: 1.5em;
+    font-family: 'VT323', monospace;
+    width: 50%;
+    outline: none;
+}
+.read-btn {
+    height: 1em;
+    width: 1em;
+    margin-right: 6.2em;
+}
+.submit-btn {
     width: 60%;
     height: 3em;
     cursor: pointer;
@@ -162,15 +143,29 @@ input {
     outline: none;
     border: 0.2em solid #202020;
     background-color: #4D774E;
-    transition: all 500ms ease-in-out;
+    transition: all 100ms ease-in-out;
     opacity: 0.7;
 }
 
-.submit-Btn:hover {
+.submit-btn:hover {
     opacity: 1;
     transform: scale(1.1);
 }
-.cardBtn {
+.name {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #212121;
+    font-family: 'Rubik', sans-serif;
+}
+.author {
+    color: #2a2a2a;
+    font-family: 'Rubik', sans-serif;
+}
+.pages {
+    color: #404040;
+    font-family: 'Rubik', sans-serif;
+}
+.card-btn {
     font-family: 'VT323', monospace;
     cursor: pointer;
     align-self: center;
@@ -178,16 +173,20 @@ input {
     outline: none;
     border: 0.2em solid #202020;
 }
-.readBtn {
+.card-btn:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+.read-status {
     margin-left:auto;
     margin-right:auto;
     background-color: #4D774E;
-    transition: all 500ms ease-in-out;
+    transition: all 100ms ease-in-out;
 }
 
-.removeBtn {
+.remove-btn {
     margin-left:auto;
     margin-right:auto;
     background-color: #B73225;
-    transition: all 500ms ease-in-out;
+    transition: all 100ms ease-in-out;
 }
