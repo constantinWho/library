@@ -14,33 +14,22 @@
     </header>
     <main id="container">
 
-        <form class="new-book-form card">
-            <p class="close-btn">X</p>
+        <form id="new-book-form" class="card">
+            <p id="close-btn">x</p>
             <label for="name-input">Book:</label>
-            <input required type="text" name="name-input" class="name-input" placeholder="Little Prince"><br>
+            <input required type="text" name="name-input" id="name-input" placeholder="Little Prince"><br>
             <label for="author-input">Author:</label>
-            <input required type="text" name="author-input" class="author-input" placeholder="Antoine de Saint-Exupéry"><br>
-            <label for="pages-input">Pages:</label>
-            <input min="1" required type="number" name="pages-input" class="pages-input" placeholder="64"><br>
-            <label for="read-btn">Read:</label>
-            <input type="checkbox" name="read-btn" class="read-btn"><br>
-            <input class="submit-btn" type="submit" value="Submit">
+            <input required type="text" name="author-input" id="author-input" placeholder="Antoine de Saint-Exupéry"><br>
+            <label for="pages-input">Pages:</label> 
+            <input min="1" required type="number" name="pages-input" id="pages-input" placeholder="64"><br>
+            <label for="read-input">Read:</label>
+            <input type="checkbox" name="read-input" id="read-input"><br>
+            <input id="submit-btn" type="submit" value="SUBMIT">
         </form>
-
-        <div class="card">
-            <p class="name">Harry Potter and the Order of Phoenix</p>
-            <p class="author">J.K. Rowling</p>
-            <p class="pages">851</p>
-            <button class="card-btn read-status">READ</button>
-            <button class="card-btn remove-btn">REMOVE</button>
-        </div>
-
     </main>
 <script src="script.js"></script>
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=VT323&family=Work+Sans&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Quicksand:wght@300&family=RocknRoll+One&display=swap');
 </style>
 </body>
 </html>

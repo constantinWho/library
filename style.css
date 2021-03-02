@@ -1,12 +1,14 @@
 body {
-    background: #3f3f3f;
+    background: #0073cf;
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0; 
 }
 p {
-    font-family: 'VT323', monospace !important;
+    color: #161F6D;
+    font-family: 'RocknRoll One', sans-serif;
+    text-transform: capitalize;
     cursor: default;
     text-align: center;
     font-size: 1.5em;
@@ -18,28 +20,27 @@ header {
     display: flex;
     justify-content: space-around;
     height: 10em;
-    background: #202020;
-    border-bottom: 1px solid #ffdf6c;
+    background: #1A2238;
 }
 #library-logo {
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Quicksand', sans-serif;
     cursor:default;
     align-self: center;
-    background: #707070;
+    background: #0073cf;
+    font-size: 20px;
     display: inline-block;
     font-size: 5em;
     text-align: center;
     margin: 0;
-    color: #ffdf6c;
+    color: #ffffff;
     border-radius: 50%;
     transition: all 100ms ease-in-out;
 }
 #library-logo:hover {
-    background: #4D774E;
     transform: scale(1.1);
 }
 #new-book {
-    font-family: 'VT323', monospace;
+    font-family: 'DotGothic16', sans-serif;
     margin-right: 2em;
     cursor: pointer;
     display: inline-block;
@@ -48,19 +49,20 @@ header {
     margin-top: auto;
     margin-bottom: auto;
     padding: 1em;
-    color: #ffdf6c;
-    border: 1px solid #ffdf6c;
+    color: #eeeeee;
+    border: 1px solid #9DAAF2;
+    border-radius: 30px;
     background-color: #202020;
     outline: none;
     transition: all 100ms ease-in-out;
 }
 #new-book:hover {
-    background: #164A41;
+    color: #FF6A3D;
     transform: scale(1.1);
 }
 
 /* MAIN */
-#container {
+main {
     margin-left:auto;
     margin-right:auto;
     width: 85%;
@@ -76,117 +78,123 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin: 2em;
     width: 17em;
     height: 23em;
-    background:  #959595;
-    border: 0.3em solid #202020;
+    background:  #ffffff;
+    border-radius: 5px;
     align-self: center;
     transition: all 100ms ease-in-out;
 }
 .card:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 2em #202020;
+    transform: scale(1.01);
 }
 
 /* NEW BOOK FORM */
-.new-book-form {
+#new-book-form {
     position: absolute;
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    margin-top: 0;
+    margin-top: 100px;
     height: 25em;
-    width: 20em;
-    border: 0.3em solid #164A41;
+    width: 25em;
+    border: 1px solid #164A41;
     display: none;
 }
-.close-btn {
+#close-btn {
+    font-size: 20px;
     cursor: pointer;
     position: absolute;
-    right: -5px;
-    top: -5px;
-    margin: 0;
-    padding: 0;
+    text-align: center;
+    right: -35px;
+    top: -35px;
+    width: 29px;
     background:#B73225;
-    height: 0.9em;
-    width: 0.9em;
-    border: 0.1em solid #164A41;
-    border-radius: 3px;
+    border: 1px solid black;
+    border-radius: 50%;
+    opacity: 0.7;
+}
+#close-btn:hover {
+    opacity: 1;
 }
 label {
+    margin-left: 20px;
+    color: #161F6D;
+    font-family: 'RocknRoll One', sans-serif;
     width: 30%;
     font-size: 2em;
-    font-family: 'VT323', monospace;
 }
 input {
-    font-size: 1.5em;
-    font-family: 'VT323', monospace;
-    width: 50%;
+    font-size: 25px;
+    width: 60%;
+    height: 30px;
     outline: none;
 }
-.read-btn {
-    height: 1em;
-    width: 1em;
-    margin-right: 6.2em;
+#read-input {
+    height: 30px;
+    width: 30px;
+    margin-right: 9em;
 }
-.submit-btn {
+#submit-btn {
+
+    margin-left: auto;
+    margin-right: auto;
     width: 60%;
     height: 3em;
     cursor: pointer;
-    font-family: 'VT323', monospace;
-    cursor: pointer;
     outline: none;
-    border: 0.2em solid #202020;
-    background-color: #4D774E;
+    background-color: #1FC58E;
     transition: all 100ms ease-in-out;
-    opacity: 0.7;
+    font-family: 'Quicksand', sans-serif;
+    border: none;
 }
 
-.submit-btn:hover {
-    opacity: 1;
+#submit-btn:hover {
     transform: scale(1.1);
+    opacity: 0.7;
 }
 .name {
+    margin-top: 10px;
     font-size: 1.8em;
     font-weight: bold;
-    color: #212121;
-    font-family: 'Rubik', sans-serif;
 }
-.author {
-    color: #2a2a2a;
-    font-family: 'Rubik', sans-serif;
-}
-.pages {
-    color: #404040;
-    font-family: 'Rubik', sans-serif;
-}
+
 .card-btn {
-    font-family: 'VT323', monospace;
+    font-family: 'DotGothic16', sans-serif;
+    color: #ffffff;
     cursor: pointer;
     align-self: center;
-    width: 10em;
+    width: 225px;
+    height: 50px;
     outline: none;
-    border: 0.2em solid #202020;
+    border: none;
+    padding: 0;
+    font-size: 20px;
+    margin:0;
+    padding: 0;
 }
 .card-btn:hover {
-    opacity: 0.8;
-    transform: scale(1.1);
+    font-size: 30px;
 }
 .read-status {
     margin-left:auto;
     margin-right:auto;
-    background-color: #4D774E;
+    width: 100%;
     transition: all 100ms ease-in-out;
 }
 
 .remove-btn {
+    width: 100%;
     margin-left:auto;
     margin-right:auto;
-    background-color: #B73225;
+    background-color: #FF6A3D;
     transition: all 100ms ease-in-out;
+    border-radius: 5px;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
 }
